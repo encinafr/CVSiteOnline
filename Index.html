@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javier Encina</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/Site.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+  </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#workos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contacto">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>Javier Encina</strong> <br /> Desarrollador  <strong>.NET</strong> con <br> pasión por el <strong>aprendizaje</strong>
+            </h1>
+            <img class="hero-image" src="./Images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+        </div>
+    </section>
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Fletalo</h3>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> <a href="https://fletalo.com.ar">https://fletalo.com.ar</a>  </small></p>
+                    <p class="project-description">
+                        Fletalo es una plataforma creada para solicitar fletes y mudanzas.
+                        Desarrollada utilizando Angular,Ionic en el front y .Net en al backend, fue unos de mis primeros
+                        códigos en llegar a producción con lo cual lo tengo un gran aprecio.
+                        Fue desarrollado dentro de la empresa Engee It junto con otros desarrolladores.
+                    </p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="./Images/fletalo.jpg" alt="fletalo">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Afianzadora</h3>
+                    <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong><a href="https://afianzadora.online/">https://afianzadora.online/</a> </small></p>
+                    <p class="project-description">
+                        Afianzadora es una plataforma desarrollada para una empresa de seguros de Caución.
+                        En la cual pueden administrar usuarios, generar solicitudes y consultar polizas entre otras cosas.
+                        EL proyecto esta desarrollado en asp.mvc y .net wep api.
+                    </p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="./Images/afz.png" alt="prouyecto del curso de React Native">
+                </figure>
+            </article>
+        </div>
+
+    </section>
+    <div class="container">
+        <h2 class="work-list-title">Experiencia laboral</h2>
+    </div>
+    <section id="workos" class="work-list">
+        <div class="container">
+            <article class="work">
+                <figure class="work-imageContainer">
+                    <img class="work-image" src="./Images/kalop.jpg" width="500" />
+                </figure>
+                <div class="work-detail">
+                    <h3 class="work-title">Kalop S.A</h3>
+                    <p>Periodo:Enero 2015 - Enero 2019 </p>
+                    <p class="work-description">
+                        Empresa fabricante de materiales electricos y electrónicos
+                        en cual realice actividades como el armado de plaquetas, soldaduras,
+                        mediciones de componentes electrónicos entre otras actividades.
+                    </p>
+                    <a class="work-url" href="http://www.kalop.com.ar/" target="_blank">Ver</a>
+
+                </div>
+            </article>
+            <article class="work">
+                <figure class="work-imageContainer">
+                    <img class="work-image" src="./Images/engee.jpg" width="500" />
+                </figure>
+                <div class="work-detail">
+                    <h3 class="work-title">Engee It</h3>
+                    <p>Periodo:Mayo 2019 - Actualidad </p>
+                    <p class="work-description">
+                        Software Factory en donde
+                        diseñamos, creamos y optimizamos desarrollos software a medida.
+                    </p>
+                    <a class="work-url" href="https://www.engee.com.ar/" target="_blank">Ver</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <form name="contact" id="contact" class="form-email">
+                <h3>¿Creamos algo juntos?</h3>
+                <!-- @Html.TextBoxFor(m => m.Name, new { @class = "form-control", autocomplete = "off", id = "name", name = "name", placeholder = "Nombre" }) -->
+                <!-- <p style="color: white;">@Html.ValidationMessageFor(m => m.Name)</p> -->
+
+                <input style="margin-bottom: 1%;" type="text" placeholder="Nombre" id="name" ><br>
+                <input style="margin-bottom: 1%;" type="text" placeholder="Telefono" id="phoneNumber"><br>
+                <input style="margin-bottom: 1%;" type="text" placeholder="Email" id="email"><br>
+                <input style="margin-bottom: 1%;" type="text" placeholder="Mensaje" id="message"><br>
+                <!-- @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", type = "number", autocomplete = "off", id = "phone", name = "phone", placeholder = "Celular" })
+                <p style="color:white;">@Html.ValidationMessageFor(m => m.PhoneNumber)</p>
+
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", autocomplete = "off", id = "email", name = "email", placeholder = "Email" })
+                <p style="color:white;">@Html.ValidationMessageFor(m => m.Email)</p>
+
+                @Html.TextAreaFor(m => m.Message, new { @class = "form-control", autocomplete = "off", id = "message", name = "message", placeholder = "Mensaje" })
+                <p style="color:white;">@Html.ValidationMessageFor(m => m.Message)</p> -->
+
+                <input class="btn btn-info" id="btn-submit" value="Enviar">
+            </form>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <a href="https://twitter.com/JavierEncina18" class="social-link twitter"></a>
+                <a href="https://github.com/encinafr" class="social-link github"></a>
+                <a href="https://www.instagram.com/encinajavier7" class="social-link instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
